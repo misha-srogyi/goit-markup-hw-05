@@ -86,62 +86,41 @@
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-/* Модалка */
+/* Вспливаюче вікно */
+.card-thumb {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 294px;
+}
+
 .hover-thumb {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(33, 150, 243, 0.9);
+  background-color: var(--background-hover-thumb-portfolio);
   padding: 63px 24px;
   font-size: 18px;
   line-height: calc(28 / 18);
   color: white;
+  /* opacity: 0; */
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  transform: translateY(100%);
 }
 
-a.card-portfolio-link {
-  position: relative;
+.card-portfolio:hover .hover-thumb {
+  /* opacity: 1; */
+  transform: translateY(0);
+}
+
+.card-portfolio-link {
   display: block;
 }
 
-.card-thumb {
-  overflow: hidden;
-  width: 100%;
-  height: 294px;
-}
-/* .product-thumb::before {
-  display: inline-block;
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--blue-text);
-  transform: translateY(-100%);
-}
-.card-portfolio:hover .product-thumb::before {
-  transform: translateY(0);
-} */
-
-/* .hover-thumb {
-  display: inline-block;
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--blue-text);
-  transform: translateY(-100%);
-} */
-
-/* .hover-thumb p {
-  color: var(--white-text);
-  font-size: 18px;
-  line-height: 1.55;
-} */
+/* Вспливаюче вікно */
 
 .card-content {
   padding: 20px 24px;
