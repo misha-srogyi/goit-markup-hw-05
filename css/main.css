@@ -365,6 +365,7 @@ img {
   justify-content: center;
   align-items: center;
   background-color: var(--icon-background-dark-grey);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* SVG */
 
@@ -410,6 +411,7 @@ img {
   width: calc(100% / 6 - 30px);
   height: 90px;
   margin: 0 15px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-item:hover {
   border-color: var(--blue-text);
@@ -436,4 +438,5 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
